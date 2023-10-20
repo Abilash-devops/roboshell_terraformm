@@ -1,7 +1,7 @@
 #!/bin/bash
 D=$(date +%F:%H:%M:%S)
 SCRIPT_NAME=$0
-LOG_PATH=/home/centos/roboshell/logs
+LOG_PATH=/home/centos/roboshell_terraformm/logs
 LOGFILE=$LOG_PATH/$0-$D-log
 u=$(id -u)
 R="\e[31m"
@@ -51,7 +51,7 @@ mv target/shipping-1.0.jar shipping.jar &>> $LOGFILE
 
 validate $? "move jar files"
 
-cp -rp /home/centos/roboshell/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
+cp -rp /home/centos/roboroboshell_terraformmshell/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
 
 validate $? "copy config service file"
 
