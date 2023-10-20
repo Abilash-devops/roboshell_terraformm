@@ -51,7 +51,7 @@ mv target/shipping-1.0.jar shipping.jar &>> $LOGFILE
 
 validate $? "move jar files"
 
-cp -rp /home/centos/roboroboshell_terraformmshell/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
+cp -rp /home/centos/roboshell_terraformm/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
 
 validate $? "copy config service file"
 
